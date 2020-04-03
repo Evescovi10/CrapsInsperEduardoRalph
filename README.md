@@ -1,2 +1,2 @@
 # CrapsInsperEduardoRalph
-CrapsInsper DesSoft / Alunos: Ralph Michaan e Eduardo Vescovi
+CrapsInsper Design de Software / Alunos: Ralph Michaan e Eduardo Vescovi
