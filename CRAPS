@@ -124,7 +124,6 @@ while Encerrar == False and Point == False:
                         Point = False
                     else:
                         print("A soma dos dados é {0}.".format(soma2))
-                        Point = True
 
                 #POINT + FIELD#
                 if resp2 == 'f':
