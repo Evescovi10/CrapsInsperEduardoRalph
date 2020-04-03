@@ -1,0 +1,15 @@
+###DIÁLOGO INICIAL###
+import random
+Encerrar = False
+Point = False
+fichas = 100
+soma = 0
+soma2 = 0
+print("Bem-vindo ao Craps Insper! Você tem 100 fichas. Depois de uma aposta, digite 'e' para encerrar.")
+
+#LOOP COME-OUT#
+while Encerrar == False and Point == False:
+    resp = input("Você está na fase de Come Out. Digite 'p' para Pass-Line, 'f' para Field, 'a' para Any Craps ou 't' para Twelve: ")
+    if resp == 'e':
+        print("Você encerrou com {0} fichas.".format(fichas))
+        Encerrar = True
