@@ -118,12 +118,12 @@ while Encerrar == False and Point == False:
                         print("Você tem {0} fichas.".format(fichas))
                         Point = False
                     if soma2 == 7:
-                        print("A soma dos dados é {0}. Você perdeu {1} fichas.".format(soma, aposta_p))
+                        print("A soma dos dados é {0}. Você perdeu {1} fichas.".format(soma2, aposta_p))
                         fichas = fichas - aposta_p
                         print("Você tem {0} fichas.".format(fichas))
                         Point = False
                     else:
-                        print("A soma dos dados é {0}. Você continua no Point".format(soma2))
+                        print("A soma dos dados é {0}.".format(soma2))
                         Point = True
 
                 #POINT + FIELD#
@@ -136,13 +136,13 @@ while Encerrar == False and Point == False:
                     soma2 = dado3 + dado4
                     if soma2 == 7:
                         q = aposta_p + aposta_f
-                        print("A soma dos dados é {0}. Você perdeu {1} fichas.".format(soma,q))
+                        print("A soma dos dados é {0}. Você perdeu {1} fichas.".format(soma2,q))
                         fichas = fichas - q
                         print("Você tem {0} fichas.".format(fichas))
                         Point = False
                     if soma2 == soma:
                         q = aposta_p + aposta_f
-                        print("A soma dos dados é {0}, temos um point! Você ganhou {1} fichas.".format(soma,q))
+                        print("A soma dos dados é {0}, temos um point! Você ganhou {1} fichas.".format(soma2,q))
                         fichas = fichas + q
                         print("Você tem {0} fichas.".format(fichas))
                         Point = False
@@ -176,13 +176,13 @@ while Encerrar == False and Point == False:
                     dado4 = random.randint(1,6)
                     soma2 = dado3 + dado4     
                     if soma2 == 7:
-                        q = aposta_p + aposta_t
+                        q = aposta_p + aposta_a
                         print("A soma dos dados é {0}. Você perdeu {1} fichas.".format(soma2,q))
                         fichas = fichas - q
                         print("Você tem {0} fichas.".format(fichas))
                         Point = False
                     if soma2 == soma:
-                        q = aposta_p + aposta_t
+                        q = aposta_p + aposta_a
                         print("A soma dos dados é {0}, temos um point! Você ganhou {1} fichas.".format(soma2,q))
                         fichas = fichas + q
                         print("Você tem {0} fichas.".format(fichas))
