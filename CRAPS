@@ -13,3 +13,30 @@ while Encerrar == False and Point == False:
     if resp == 'e':
         print("Você encerrou com {0} fichas.".format(fichas))
         Encerrar = True
+
+#FIELD#
+    if resp == 'f':
+        print("Field")
+        print("Você tem {0} fichas.".format(fichas))
+        aposta_f = int(input("Digite a quantidade a ser apostada: "))
+        dado1 = random.randint(1,6)
+        dado2 = random.randint(1,6)
+        soma = dado1 + dado2
+        if soma == 5 or soma == 6 or soma == 7 or soma == 8:
+            print("A soma dos dados é {0}. Você perdeu {1} fichas.".format(soma,aposta_f))
+            fichas = fichas - aposta_f
+            print("Você tem {0} fichas.".format(fichas))
+        if soma == 3 or soma == 4 or soma == 9 or soma == 10 or soma == 11:
+            print("A soma dos dados é {0}. Você ganhou {1} fichas.".format(soma,aposta_f))
+            fichas = fichas + aposta_f
+            print("Você tem {0} fichas.".format(fichas))
+        if soma == 2:
+            q = (aposta_f)*(2)
+            print("A soma dos dados é {0}. Você ganhou {1} fichas.".format(soma,q))
+            fichas = fichas + q
+            print("Você tem {0} fichas.".format(fichas))
+        if soma == 12:
+            q = (aposta_f)*(3)
+            print("A soma dos dados é {0}. Você ganhou {1} fichas.".format(soma,q))
+            fichas = fichas + q
+            print("Você tem {0} fichas.".format(fichas))
