@@ -40,3 +40,21 @@ while Encerrar == False and Point == False:
             print("A soma dos dados é {0}. Você ganhou {1} fichas.".format(soma,q))
             fichas = fichas + q
             print("Você tem {0} fichas.".format(fichas))
+           
+      #TWELVE#
+    if resp == 't':
+        print("Twelve")
+        print("Você tem {0} fichas.".format(fichas))
+        aposta_t = int(input("Digite a quantidade a ser apostada: "))
+        dado1 = random.randint(1,6)
+        dado2 = random.randint(1,6)
+        soma = dado1 + dado2
+        if soma == 12:
+            q = (aposta_t)*(12)
+            print("A soma dos dados é {0}. Você ganhou {1} fichas.".format(soma,q))
+            fichas = fichas + q
+            print("Você tem {0} fichas.".format(fichas))
+        else:
+            print("A soma dos dados é {0}. Você perdeu {1} fichas.".format(soma,aposta_t))
+            fichas = fichas - aposta_t
+            print("Você tem {0} fichas.".format(fichas))      
