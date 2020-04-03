@@ -14,7 +14,7 @@ while Encerrar == False and Point == False:
         print("Você encerrou com {0} fichas.".format(fichas))
         Encerrar = True
 
-#FIELD#
+    #FIELD#
     if resp == 'f':
         print("Field")
         print("Você tem {0} fichas.".format(fichas))
@@ -41,7 +41,7 @@ while Encerrar == False and Point == False:
             fichas = fichas + q
             print("Você tem {0} fichas.".format(fichas))
            
-      #TWELVE#
+    #TWELVE#
     if resp == 't':
         print("Twelve")
         print("Você tem {0} fichas.".format(fichas))
@@ -59,7 +59,7 @@ while Encerrar == False and Point == False:
             fichas = fichas - aposta_t
             print("Você tem {0} fichas.".format(fichas))      
             
-   #ANY CRAPS#
+    #ANY CRAPS#
     if resp == 'a':
         print("Any Craps")
         print("Você tem {0} fichas.".format(fichas))
